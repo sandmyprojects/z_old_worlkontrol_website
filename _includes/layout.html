@@ -4,91 +4,95 @@ title: WORLKONTROL SYSTEM
 
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{title}}</title>
-        <meta name="description" content="Sitio web">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>{{title}} - WORLKONTROL SYSTEM</title>
+    <meta name="description" content="Sitio web">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="/scss/main.css">
-    </head>
-    <body>
-        <div class="navbar-social">
-            <a href="https://www.facebook.com/WORLKONTROLSYSTEM/" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://wa.me/51946182531" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="menu-item" onClick="openNavbar()">
-                <i class="menu-icon" data-icon="menu"></i>
-            </div>
-        </div>
-        <div class="navbar-logo">
-            <a href='/'>
-                <img src="/img/worlkontrol.png" alt="logo"> WORLKONTROL SYSTEM
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/scss/main.css">
+</head>
+
+<body>
+    <div class="navbar-social">
+        <a href="https://www.facebook.com/WORLKONTROLSYSTEM/" target="_blank">
+            <i class="fab fa-facebook"></i>
         </a>
+        <a href="https://wa.me/51946182531" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="menu-item" onClick="openNavbar()">
+            <i class="menu-icon" data-icon="menu"></i>
         </div>
-        <header class="navbar" id="navbar">
-            <div class="navbar-links">
-                <a href="/" class="nav-item is-active" onClick="openNavbar()">
+    </div>
+    <div class="navbar-logo">
+        <a href='/'>
+            <img src="/img/worlkontrol.png" alt="logo"> WORLKONTROL SYSTEM
+        </a>
+    </div>
+    <header class="navbar" id="navbar">
+        <div class="navbar-links">
+            <a href="/" class="nav-item" onClick="openNavbar()">
                 Inicio
             </a>
-                <a href="/#servicios" class="nav-item" onClick="openNavbar()">
+            <a href="/#servicios" class="nav-item" onClick="openNavbar()">
                 Servicios
             </a>
-                <a href="/portafolio" class="nav-item" onClick="openNavbar()">
+            <a href="/portafolio" class="nav-item" onClick="openNavbar()">
                 Portafolio
             </a>
-                <a href="/contacto/" class="nav-item" onClick="openNavbar()">
+            <a href="/contacto/" class="nav-item" onClick="openNavbar()">
                 Contacto
             </a>
-            </div>
-        </header>
-        
-        {{ content | safe }}
+        </div>
+    </header>
 
-        <footer>
-            <div id="whatsapp" class="whatsapp">
-                <i class="fab fa-whatsapp"></i>
-            </div>
-            <div class="footer container">
-                <p>
-                    <strong>
+    {{ content | safe }}
+
+    <footer>
+        <div id="whatsapp" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="footer container">
+            <p>
+                <strong>
                     WORLKONTROL SYSTEM © 2021
                 </strong>
-                </p>
-                <p class="opacity:1">
+            </p>
+            <p class="opacity:1">
                 946182531 - 992858949 | <i data-icon="room"></i> Av. Ramón Castilla 1004, Cayma
             </p>
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/WORLKONTROLSYSTEM" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://wa.me/51946182531" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/WORLKONTROLSYSTEM" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/51946182531" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-        </footer>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <script src="https://unpkg.com/tippy.js@6"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.css">
-        <script src="/js/app.js"></script>
-    </body>
+        </div>
+    </footer>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.css">
+    <script src="/js/app.js"></script>
+</body>
+
 </html>

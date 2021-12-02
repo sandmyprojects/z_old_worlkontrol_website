@@ -27,8 +27,10 @@ tippy('#whatsapp', {
 
 AOS.init();
 
-const gallery = new Viewer(document.getElementById('images'));
+let gallery;
+let previewImage;
+gallery = new Viewer(document.getElementById('images'));
 
-const previewImage = (id) => {
+previewImage = (id) => {
     document.getElementById(`image${id}`).click();
 }
