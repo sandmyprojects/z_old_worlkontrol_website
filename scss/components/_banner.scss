@@ -1,0 +1,17 @@
+.banner {
+    background-color: #000;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/img/banner.jpg);
+    background-attachment: fixed;
+    padding: 3rem 2rem;
+
+    display: grid;
+    @include col(1 1);
+
+    &__info {
+        @include center-y;
+    }
+
+    img {
+        border-radius: $radius-sm;
+    }
+}
