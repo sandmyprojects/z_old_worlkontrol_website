@@ -1249,7 +1249,8 @@ video {
 .nav-item {
   opacity: .6;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 .nav-item.is-active {

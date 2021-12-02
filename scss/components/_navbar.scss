@@ -54,7 +54,6 @@ $navbar-bg: $secondary-bg;
         align-items: center;
         margin-right: 20%;
         margin-left: 20%;
-
     }
 
     @include to(md) {
@@ -68,7 +67,8 @@ $navbar-bg: $secondary-bg;
 .nav-item {
     opacity: .6;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
 
     &.is-active {
         opacity: 1;
