@@ -524,6 +524,12 @@ video {
 @use 'sass:math';
 html {
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -1298,7 +1304,7 @@ img {
   .banner {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    padding: 3rem 2rem;
+    padding: 0 2rem;
   }
 }
 
