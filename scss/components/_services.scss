@@ -1,11 +1,30 @@
-.services {
-    &__item {
-        h3 {
-            margin-top: $margin;
-            text-align: center;
+.service {
+    display: grid;
+    grid-template-columns: 1fr 28rem;
+    margin: 3rem 0;
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    img {
+        border-radius: rpt(2, 1rem 8rem);
+        width: 100%;
+    }
+
+    &.is-left {
+        grid-template-columns: 28rem 1fr;
+
+        img {
+            border-radius: rpt(2, 6rem 1rem);
         }
     }
-    img {
-        border-radius: 50%;
+
+    &__info {
+        @include center-y;
+    }
+
+    @include to(md) {
+        grid-template-columns: 1fr !important;
     }
 }

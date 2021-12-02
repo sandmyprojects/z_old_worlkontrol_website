@@ -2,7 +2,7 @@ $navbar-bg: $secondary-bg;
 .navbar {
     position: sticky;
     width: 100%;
-    background-color: $navbar-bg;
+    background-color: #18904A;
     z-index: 9999;
     height: 100vh;
     transition: transform 0.3s;
@@ -22,6 +22,22 @@ $navbar-bg: $secondary-bg;
     }
 }
 
+.navbar-social {
+    position: fixed;
+    z-index: 999999;
+    top: 0.9rem;
+    right: 1rem;
+    font-size: 1.2rem;
+
+    a{
+        margin-left: 0.8rem;
+    }
+
+    @include to(md) {
+        display: none;
+    }
+}
+
 .navbar-logo {
     position: fixed;
     left: 12px;
@@ -38,7 +54,7 @@ $navbar-bg: $secondary-bg;
     }
 
     @include to(md) {
-        background-color: $navbar-bg;
+        background-color: #18904A;
         width: 100%;
         left: 0;
         top: 0;
@@ -65,13 +81,17 @@ $navbar-bg: $secondary-bg;
     }
 }
 .nav-item {
-    opacity: .6;
     font-weight: 500;
     font-size: 0.9rem;
     text-transform: uppercase;
 
     &.is-active {
-        opacity: 1;
+        @include from(md) {
+            background-color: #13743b;
+            height: 100%;
+            padding: 0 2rem;
+            @include center-y;
+        }
     }
 }
 @include to(md) {

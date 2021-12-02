@@ -1319,7 +1319,7 @@ img {
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
-  background-color: var(--secondary-bg);
+  background-color: #18904A;
   z-index: 9999;
   height: 100vh;
   -webkit-transition: -webkit-transform 0.3s;
@@ -1344,6 +1344,24 @@ img {
   .navbar.is-active {
     -webkit-transform: translate(0, 0px);
             transform: translate(0, 0px);
+  }
+}
+
+.navbar-social {
+  position: fixed;
+  z-index: 999999;
+  top: 0.9rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.navbar-social a {
+  margin-left: 0.8rem;
+}
+
+@media screen and (max-width: 48em) {
+  .navbar-social {
+    display: none;
   }
 }
 
@@ -1375,7 +1393,7 @@ img {
 
 @media screen and (max-width: 48em) {
   .navbar-logo {
-    background-color: var(--secondary-bg);
+    background-color: #18904A;
     width: 100%;
     left: 0;
     top: 0;
@@ -1415,14 +1433,23 @@ img {
 }
 
 .nav-item {
-  opacity: .6;
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
 
-.nav-item.is-active {
-  opacity: 1;
+@media screen and (min-width: 48em) {
+  .nav-item.is-active {
+    background-color: #13743b;
+    height: 100%;
+    padding: 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 48em) {
@@ -1528,13 +1555,46 @@ img {
   margin-top: 0;
 }
 
-.services__item h3 {
-  margin-top: 0.5rem;
-  text-align: center;
+.service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28rem;
+      grid-template-columns: 1fr 28rem;
+  margin: 3rem 0;
 }
 
-.services img {
-  border-radius: 50%;
+.service h2 {
+  font-size: 2rem;
+}
+
+.service img {
+  border-radius: 1rem 8rem 1rem 8rem;
+  width: 100%;
+}
+
+.service.is-left {
+  -ms-grid-columns: 28rem 1fr;
+      grid-template-columns: 28rem 1fr;
+}
+
+.service.is-left img {
+  border-radius: 6rem 1rem 6rem 1rem;
+}
+
+.service__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 48em) {
+  .service {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
 }
 
 .align\:center {
