@@ -2,10 +2,15 @@
     background-color: #000;
     background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/img/banner.jpg);
     background-attachment: fixed;
-    padding: 3rem 2rem;
-
+    padding: 2rem 1rem;
+    
     display: grid;
-    @include col(1 1);
+    gap: 1rem;
+    
+    @include from(sm) {
+        @include col(1 1);
+        padding: 3rem 2rem;
+    }
 
     &__info {
         @include center-y;

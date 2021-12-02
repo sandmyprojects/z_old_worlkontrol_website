@@ -1288,11 +1288,18 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(/img/banner.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/banner.jpg);
   background-attachment: fixed;
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 32em) {
+  .banner {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem;
+  }
 }
 
 .banner__info {
@@ -1363,6 +1370,7 @@ img {
 
 .navbar-logo img {
   width: 36px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 48em) {
