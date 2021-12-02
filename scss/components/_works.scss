@@ -1,10 +1,9 @@
 .works {
-    &__item {
-        h3 {
-            margin-top: $margin;
-        }
-        p {
-            margin-top: 0;
-        }
+    &__img {
+        width: 100%;
+        height: 250px;
+        border-radius: $radius-sm;
+        background-position: center;
+        background-size: cover;
     }
 }
