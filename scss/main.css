@@ -1356,6 +1356,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.works__item p {
+  margin-top: 0;
+}
+
 .align\:center {
   display: -webkit-box;
   display: -ms-flexbox;
