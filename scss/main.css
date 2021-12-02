@@ -1352,6 +1352,10 @@ video {
   font-size: 1.4rem;
 }
 
+.works__item h3 {
+  margin-top: 0.5rem;
+}
+
 .align\:center {
   display: -webkit-box;
   display: -ms-flexbox;
