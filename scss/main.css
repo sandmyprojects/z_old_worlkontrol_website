@@ -1431,6 +1431,8 @@ img {
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 48em) {
