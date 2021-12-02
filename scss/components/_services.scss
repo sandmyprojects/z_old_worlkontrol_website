@@ -1,0 +1,11 @@
+.services {
+    &__item {
+        h3 {
+            margin-top: $margin;
+            text-align: center;
+        }
+    }
+    img {
+        border-radius: 50%;
+    }
+}

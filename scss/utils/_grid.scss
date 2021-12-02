@@ -22,6 +22,10 @@
     @include grid-generator((base: 2, md: 4, lg: 6));
 }
 
+.grid\:3 {
+    @include grid-generator((base: 2, md: 3, lg: 6));
+}
+
 // gapp
 .gap\:sm {
     gap: 1rem;

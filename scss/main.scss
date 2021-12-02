@@ -6,6 +6,9 @@
 
 @import './helpers/mixins';
 
+// general tags / elements
+@import './utils/tags';
+
 @import './components/general/badge';
 @import './components/general/breadcrumb';
 @import './components/general/button';
@@ -25,9 +28,17 @@
 @import './components/whatsapp';
 @import './components/footer';
 @import './components/works';
+@import './components/services';
 
 @import './utils/utilities';
 @import './base/icons';
 
-// general tags / elements
-@import './utils/tags';
+
+.tippy-box[data-theme~='whatsapp'] {
+  background: $secondary-bg;
+  padding: 0.5rem .3rem;
+}
+
+.tippy-box[data-theme~='whatsapp'] .tippy-arrow::before {
+  border-top-color: $secondary-bg;
+}
