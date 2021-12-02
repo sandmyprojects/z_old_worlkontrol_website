@@ -1,14 +1,20 @@
 // whatsapp button
 tippy('#whatsapp', {
     content: `
-    <a href="https://wa.me/51993026437?text=prueba" target="_blank" class="button is-primary is-small">
-        Numero 1
-    </a>
-    <a href="https://wa.me/51993026437?text=prueba" target="_blank" class="button is-primary is-small">
-        Numero 2
-    </a>
+    <div>
+        <a href="https://wa.me/51993026437?text=prueba" target="_blank" class="button is-primary">
+            <i data-icon="person"></i> Publicista Victor
+        </a>
+    </div>
+    <div class="mg-top:sm">
+        <a href="https://wa.me/51993026437?text=prueba" target="_blank" class="button is-primary">
+            <i data-icon="person"></i> Publicista Angel
+        </a>
+    </div>
     `,
     allowHTML: true,
     interactive: true,
-    delay: [null, 300]
+    delay: [null, 300],
+    trigger: 'click',
+    theme: 'tomato'
 });

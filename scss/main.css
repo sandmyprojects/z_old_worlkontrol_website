@@ -1330,6 +1330,7 @@ video {
       -ms-flex-pack: center;
           justify-content: center;
   color: #000;
+  cursor: pointer;
 }
 
 .footer {
