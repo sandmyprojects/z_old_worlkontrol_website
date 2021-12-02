@@ -1,9 +1,10 @@
 $navbar-bg: $secondary-bg;
+$z-index: 99;
 .navbar {
     position: sticky;
     width: 100%;
     background-color: #18904A;
-    z-index: 9999;
+    z-index: $z-index;
     height: 100vh;
     transition: transform 0.3s;
     top: 0;
@@ -24,7 +25,7 @@ $navbar-bg: $secondary-bg;
 
 .navbar-social {
     position: fixed;
-    z-index: 999999;
+    z-index: $z-index + 10;
     top: 0.9rem;
     right: 1rem;
     font-size: 1.2rem;
@@ -41,7 +42,7 @@ $navbar-bg: $secondary-bg;
 .navbar-logo {
     position: fixed;
     left: 12px;
-    z-index: 99999;
+    z-index: $z-index + 20;
     height: 60px;
 
     @include from(md) {
@@ -124,7 +125,7 @@ $navbar-bg: $secondary-bg;
     position: fixed;
     top: 12px;
     right: 15px;
-    z-index: 999999;
+    z-index: $z-index + 15;
     font-size: 1.6rem;
     cursor: pointer;
 
@@ -140,7 +141,7 @@ $navbar-bg: $secondary-bg;
         position: fixed;
         top: 12px;
         right: 15px;
-        z-index: 999999;
+        z-index: $z-index + 5;
         font-size: 1.6rem;
         display: block;
     }

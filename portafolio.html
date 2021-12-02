@@ -3,19 +3,14 @@ permalink: "portafolio/index.html"
 layout: layout.html
 ---
 <div class="container">
-    <section class="section" id="portafolio">
-        <h2>
-            Portafolio
-        </h2>
-        <p class="opacity:1">
-            Revise nuestros trabajos
-        </p>
-        <div class="works grid:4 gap mg-top:lg" data-aos="zoom-in">
+    <div class="section">
+        <ul id="images" class="grid:4 gap">
             {%- for work in works -%}
-                <div class="works__item item">
-                    <div class="works__img" style="background-image: url({{work.image}});"></div>
-                </div>
+                <li class="cursor:pointer">
+                    <img id="image{{work.id}}" style="display: none;" src="{{work.image}}" alt="Picture 1">
+                    <div onclick="previewImage('{{work.id}}')" class="works__img" style="background-image: url({{work.image}});"></div>
+                </li>
             {%- endfor -%}
-        </div>
-    </section>
+        </ul>
+    </div>
 </div>

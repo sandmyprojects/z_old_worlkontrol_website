@@ -92,12 +92,17 @@ title: Home
         <p class="opacity:1">
             Revise nuestros trabajos
         </p>
-        <div class="works grid:4 gap mg-top:lg" data-aos="zoom-in">
-            {%- for work in works -%}
-                <div class="works__item item">
-                    <div class="works__img" style="background-image: url({{work.image}});"></div>
-                </div>
-            {%- endfor -%}
+        <div class="section">
+            <ul id="images" class="grid:4 gap">
+                {%- for work in works -%}
+                    {% if work.id < 5 %}
+                        <li class="cursor:pointer">
+                            <img id="image{{work.id}}" style="display: none;" src="{{work.image}}" alt="Picture 1">
+                            <div onclick="previewImage('{{work.id}}')" class="works__img" style="background-image: url({{work.image}});"></div>
+                        </li>
+                    {% endif %}
+                {%- endfor -%}
+            </ul>
         </div>
     </section>
 </div>
