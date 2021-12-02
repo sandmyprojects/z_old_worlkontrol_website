@@ -18,3 +18,5 @@ tippy('#whatsapp', {
     trigger: 'click',
     theme: 'whatsapp'
 });
+
+AOS.init();

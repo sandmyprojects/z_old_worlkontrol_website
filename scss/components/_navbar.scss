@@ -67,8 +67,6 @@ $navbar-bg: $secondary-bg;
     display: flex;
 
     @include from(md) {
-        justify-content: space-around;
-        align-items: center;
         margin-right: 30%;
         margin-left: 30%;
     }
@@ -85,12 +83,15 @@ $navbar-bg: $secondary-bg;
     font-size: 0.9rem;
     text-transform: uppercase;
 
-    &.is-active {
+    @include from(md) {
+        height: 100%;
+        padding: 0 2rem;
+        @include center-y;
+    }
+
+    &.is-active, &:hover {
         @include from(md) {
             background-color: #13743b;
-            height: 100%;
-            padding: 0 2rem;
-            @include center-y;
         }
     }
 }
