@@ -1,4 +1,17 @@
 {
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy  --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
   "dependencies": {
     "ascendcss": "^1.2.2"
   }
