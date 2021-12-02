@@ -1304,7 +1304,7 @@ img {
   .banner {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 3rem 2rem;
   }
 }
 
@@ -1319,6 +1319,16 @@ img {
 
 .banner img {
   border-radius: 0.4rem;
+}
+
+.title-banner {
+  background-color: #000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/banner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/banner.jpg);
+  background-attachment: fixed;
+  padding: 4rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -1568,7 +1578,7 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 28rem;
       grid-template-columns: 1fr 28rem;
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 
 .service h2 {
@@ -2108,6 +2118,10 @@ i[data-icon] {
   font-size: 1em;
 }
 
+.contact {
+  font-size: 1.1rem;
+}
+
 .tippy-box[data-theme~='whatsapp'] {
   background: var(--secondary-bg);
   padding: 0.5rem .3rem;
@@ -2115,5 +2129,11 @@ i[data-icon] {
 
 .tippy-box[data-theme~='whatsapp'] .tippy-arrow::before {
   border-top-color: var(--secondary-bg);
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  border-radius: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */

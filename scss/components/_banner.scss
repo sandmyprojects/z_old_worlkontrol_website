@@ -9,7 +9,7 @@
     
     @include from(sm) {
         @include col(1 1);
-        padding: 0 2rem;
+        padding: 3rem 2rem;
     }
 
     &__info {
@@ -19,4 +19,13 @@
     img {
         border-radius: $radius-sm;
     }
+}
+
+.title-banner {
+    background-color: #000;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/banner.jpg);
+    background-attachment: fixed;
+    padding: 4rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }

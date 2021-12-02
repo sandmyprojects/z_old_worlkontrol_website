@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLKONTROL SYSTEM</title>
+    <meta name="description" content="Sitio web">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/scss/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar-social">
+        <a href="https://www.facebook.com/WORLKONTROLSYSTEM/" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/51993026437?text=prueba" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="menu-item" onClick="openNavbar()">
+            <i class="menu-icon" data-icon="menu"></i>
+        </div>
+    </div>
+    <div class="navbar-logo">
+        <a href='/'>
+            <img src="/img/worlkontrol.png" alt="logo"> WORLKONTROL SYSTEM
+        </a>
+    </div>
+    <header class="navbar" id="navbar">
+        <div class="navbar-links">
+            <a href="/" class="nav-item" onClick="openNavbar()">
+                Inicio
+            </a>
+            <a href="/#servicios" class="nav-item" onClick="openNavbar()">
+                Servicios
+            </a>
+            <a href="/#portafolio" class="nav-item" onClick="openNavbar()">
+                Portafolio
+            </a>
+            <a href="/contacto/" class="nav-item is-active" onClick="openNavbar()">
+                Contacto
+            </a>
+        </div>
+    </header>
+    <!-- Navbar end -->
+    <div class="title-banner">
+        <h1>
+            Contacto
+        </h1>
+    </div>
+    <div class="container has-top-margin">
+        <ul class="contact">
+            <li>
+                <i data-icon="room"></i> Av. Ramón Castilla 1004, Cayma (Arequipa - Perú)
+            </li>
+            <li>
+                <i data-icon="email"></i> ejemplo@gmail.com
+            </li>
+            <li>
+                <i data-icon="phone"></i> 946182531 ó 992858949
+            </li>
+        </ul>
+    </div>
+    <div class="container has-top-margin">
+        <iframe class="map"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=arequipa,%20Av.%20Ram%C3%B3n%20Castilla%201004+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            frameborder="0"></iframe>
+    </div>
+    <footer>
+        <div id="whatsapp" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="footer container">
+            <p>
+                <strong>
+                    WORLKONTROL SYSTEM © 2021
+                </strong>
+            </p>
+            <p class="opacity:1">
+                946182531 - 992858949 | <i data-icon="room"></i> Av. Ramón Castilla 1004, Cayma
+            </p>
+            <div class="footer__social">
+                <a href="/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="/" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="/app.js"></script>
+    <script src="/assets/js/pages/home.js"></script>
+</body>
+
+</html>

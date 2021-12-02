@@ -33,6 +33,9 @@
 @import './utils/utilities';
 @import './base/icons';
 
+.contact {
+  font-size: 1.1rem;
+}
 
 .tippy-box[data-theme~='whatsapp'] {
   background: $secondary-bg;
@@ -41,4 +44,10 @@
 
 .tippy-box[data-theme~='whatsapp'] .tippy-arrow::before {
   border-top-color: $secondary-bg;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  border-radius: 0.5rem;
 }
