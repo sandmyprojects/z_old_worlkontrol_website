@@ -25,8 +25,6 @@ tippy('#whatsapp', {
     theme: 'whatsapp'
 });
 
-AOS.init();
-
 let gallery;
 let previewImage;
 gallery = new Viewer(document.getElementById('images'));
@@ -34,3 +32,5 @@ gallery = new Viewer(document.getElementById('images'));
 previewImage = (id) => {
     document.getElementById(`image${id}`).click();
 }
+
+ScrollReveal().reveal('.reveal', { delay: 500 });
