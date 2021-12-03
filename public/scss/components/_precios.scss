@@ -1,0 +1,17 @@
+.precios {
+    &__item {
+        padding: $padding;
+        background-color: $secondary-bg;
+        border-radius: $radius-sm;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.box {
+    padding: $padding;
+    background-color: $secondary-bg;
+    border-radius: $radius-sm;
+}

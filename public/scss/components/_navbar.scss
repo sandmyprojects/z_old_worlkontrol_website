@@ -1,6 +1,7 @@
 $navbar-bg: $secondary-bg;
 $z-index: 99;
 $navbar-height: 80px;
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -10,7 +11,7 @@ $navbar-height: 80px;
     height: 100vh;
     transition: all 0.3s;
     top: 0;
-    
+
     @include from(md) {
         height: 80px;
     }
@@ -33,7 +34,7 @@ $navbar-height: 80px;
     right: 1.5rem;
     font-size: 1.4rem;
 
-    a{
+    a {
         margin-left: 0.8rem;
     }
 
@@ -70,6 +71,7 @@ $navbar-height: 80px;
 .navbar-links {
     height: 100%;
     display: flex;
+    font-weight: bolder;
 
     @include from(md) {
         margin-right: 26%;
@@ -83,6 +85,7 @@ $navbar-height: 80px;
         margin-top: 80px;
     }
 }
+
 .nav-item {
     font-weight: 500;
     // font-size: 0.9rem;
@@ -96,12 +99,14 @@ $navbar-height: 80px;
         @include center-y;
     }
 
-    &.is-active, &:hover {
+    &.is-active,
+    &:hover {
         @include from(md) {
             background-color: #13743b;
         }
     }
 }
+
 @include to(md) {
     .nav-item {
         display: block;

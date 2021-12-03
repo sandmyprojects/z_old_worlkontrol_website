@@ -515,15 +515,15 @@ video {
   --danger-color: #ff0059;
   --color: #D7D8D8;
   --bg: #000;
-  --extra-bg: #212326;
-  --secondary-bg: #16181A;
-  --border-color: #393e43;
+  --extra-bg: #161816;
+  --secondary-bg: #0B0C0B;
+  --border-color: #303430;
 }
 
 @use 'sass:math';
 @use 'sass:math';
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Readex Pro', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -1324,6 +1324,23 @@ img {
   border-radius: 0.4rem;
 }
 
+.banner h1 {
+  font-weight: bold;
+  font-size: 3.3rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 48em) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
 .title-banner {
   background-color: #000;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/banner.jpg);
@@ -1433,6 +1450,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: bolder;
 }
 
 @media screen and (min-width: 48em) {
@@ -1609,6 +1627,22 @@ img {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
   }
+}
+
+.precios__item {
+  padding: 0.8rem;
+  background-color: var(--secondary-bg);
+  border-radius: 0.4rem;
+}
+
+.precios h2 {
+  text-align: center;
+}
+
+.box {
+  padding: 0.8rem;
+  background-color: var(--secondary-bg);
+  border-radius: 0.4rem;
 }
 
 .align\:center {
