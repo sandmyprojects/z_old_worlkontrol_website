@@ -9,7 +9,10 @@
     
     @include from(sm) {
         @include col(1 1);
-        padding: 3rem 2rem;
+        padding-top: 80px + 48px;
+        padding-bottom: 48px;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
     &__info {
@@ -26,6 +29,13 @@
     background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(/img/banner.jpg);
     background-attachment: fixed;
     padding: 4rem 1rem;
+
+    @include from(md) {
+        padding-top: 80px + 60px;
+        padding-bottom: 64px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
     text-align: center;
     text-transform: uppercase;
 }

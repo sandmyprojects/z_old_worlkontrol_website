@@ -1304,7 +1304,10 @@ img {
   .banner {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    padding: 3rem 2rem;
+    padding-top: 128px;
+    padding-bottom: 48px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -1331,28 +1334,35 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 48em) {
+  .title-banner {
+    padding-top: 140px;
+    padding-bottom: 64px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 .navbar {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   width: 100%;
-  background-color: #18904A;
+  background-color: transparent;
   z-index: 99;
   height: 100vh;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   top: 0;
 }
 
 @media screen and (min-width: 48em) {
   .navbar {
-    height: 60px;
+    height: 80px;
   }
 }
 
 @media screen and (max-width: 48em) {
   .navbar {
+    background-color: #18904A;
     position: fixed;
     -webkit-transform: translate(-100%, 0px);
             transform: translate(-100%, 0px);
@@ -1366,9 +1376,9 @@ img {
 .navbar-social {
   position: fixed;
   z-index: 109;
-  top: 0.9rem;
-  right: 1rem;
-  font-size: 1.2rem;
+  top: 1.4rem;
+  right: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .navbar-social a {
@@ -1385,7 +1395,7 @@ img {
   position: fixed;
   left: 12px;
   z-index: 119;
-  height: 60px;
+  height: 80px;
 }
 
 @media screen and (min-width: 48em) {
@@ -1414,6 +1424,7 @@ img {
     left: 0;
     top: 0;
     padding: 12px;
+    height: 60px;
   }
 }
 
@@ -1426,8 +1437,8 @@ img {
 
 @media screen and (min-width: 48em) {
   .navbar-links {
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: 26%;
+    margin-left: 26%;
   }
 }
 
@@ -1445,10 +1456,10 @@ img {
 
 .nav-item {
   font-weight: 500;
-  font-size: 0.9rem;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 
 @media screen and (min-width: 48em) {
@@ -1478,34 +1489,19 @@ img {
 }
 
 .navbar-container {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
 }
 
 .navbar-container.has-margin-top {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 @media screen and (min-width: 48em) {
   .navbar-container {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-}
-
-.navbar-theme {
-  position: fixed;
-  top: 12px;
-  right: 15px;
-  z-index: 114;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 48em) {
-  .navbar-theme {
-    right: 60px;
   }
 }
 

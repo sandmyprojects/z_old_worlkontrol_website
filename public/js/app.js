@@ -27,10 +27,26 @@ tippy('#whatsapp', {
 
 let gallery;
 let previewImage;
-gallery = new Viewer(document.getElementById('images'));
+if (document.getElementById('images')) {
+    gallery = new Viewer(document.getElementById('images'));
+}
 
 previewImage = (id) => {
     document.getElementById(`image${id}`).click();
 }
 
 ScrollReveal().reveal('.reveal', { delay: 500 });
+
+if (window.innerWidth > 768) {
+    window.onscroll = (e) => {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.backgroundColor = '#18904A';
+        } else {
+            document.getElementById("navbar").style.backgroundColor = 'transparent';
+        }
+    }
+}
+
+const consultar = (name) => {
+    window.open(`https://wa.me/51946182531?text=Hola quisiera consultar sobre ${name}`, '_blank');
+}

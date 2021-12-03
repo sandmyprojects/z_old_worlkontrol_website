@@ -1,19 +1,22 @@
 $navbar-bg: $secondary-bg;
 $z-index: 99;
+$navbar-height: 80px;
 .navbar {
-    position: sticky;
+    position: fixed;
     width: 100%;
-    background-color: #18904A;
+    background-color: transparent;
+    // background-color: #18904A;
     z-index: $z-index;
     height: 100vh;
-    transition: transform 0.3s;
+    transition: all 0.3s;
     top: 0;
     
     @include from(md) {
-        height: 60px;
+        height: 80px;
     }
 
     @include to(md) {
+        background-color: #18904A;
         position: fixed;
         transform: translate(-100%, 0px);
 
@@ -26,9 +29,9 @@ $z-index: 99;
 .navbar-social {
     position: fixed;
     z-index: $z-index + 10;
-    top: 0.9rem;
-    right: 1rem;
-    font-size: 1.2rem;
+    top: 1.4rem;
+    right: 1.5rem;
+    font-size: 1.4rem;
 
     a{
         margin-left: 0.8rem;
@@ -43,7 +46,7 @@ $z-index: 99;
     position: fixed;
     left: 12px;
     z-index: $z-index + 20;
-    height: 60px;
+    height: $navbar-height;
 
     @include from(md) {
         @include center;
@@ -60,6 +63,7 @@ $z-index: 99;
         left: 0;
         top: 0;
         padding: 12px;
+        height: 60px;
     }
 }
 
@@ -68,8 +72,8 @@ $z-index: 99;
     display: flex;
 
     @include from(md) {
-        margin-right: 30%;
-        margin-left: 30%;
+        margin-right: 26%;
+        margin-left: 26%;
     }
 
     @include to(md) {
@@ -81,9 +85,10 @@ $z-index: 99;
 }
 .nav-item {
     font-weight: 500;
-    font-size: 0.9rem;
+    // font-size: 0.9rem;
     text-transform: uppercase;
     transition: all 0.3s;
+    text-align: center;
 
     @include from(md) {
         height: 100%;
@@ -105,10 +110,10 @@ $z-index: 99;
 }
 
 .navbar-container {
-    padding-top: 60px;
+    padding-top: $navbar-height;
 
     &.has-margin-top {
-        padding-top: 60px + 20px;
+        padding-top: $navbar-height + 20px;
     }
 
     padding-left: 0.8rem;
@@ -118,19 +123,6 @@ $z-index: 99;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
 
-    }
-}
-
-.navbar-theme {
-    position: fixed;
-    top: 12px;
-    right: 15px;
-    z-index: $z-index + 15;
-    font-size: 1.6rem;
-    cursor: pointer;
-
-    @include to(md) {
-        right: 60px;
     }
 }
 
