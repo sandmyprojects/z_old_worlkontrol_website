@@ -1614,6 +1614,17 @@ img {
       grid-template-columns: 28rem 1fr;
 }
 
+@media screen and (max-width: 48em) {
+  .service.is-left .service__info {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+}
+
 .service.is-left img {
   border-radius: 6rem 1rem 6rem 1rem;
 }
