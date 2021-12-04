@@ -154,6 +154,7 @@ class Precios {
             precio = (parseFloat(alto) * parseFloat(ancho)) * especificacionesPrice;
         }
 
+        // se agrega un 20% de ganancias
         precio = precio = ((20 / 100) * precio) + precio;
 
         precio = Number((precio).toFixed(1));
@@ -163,7 +164,7 @@ class Precios {
 }
 
 var typed = new Typed('#brand', {
-    strings: ["WORLKONTROL SYSTEM", "Diseños", "Marketing", "Sitios web"],
+    strings: ["Diseños", "Banners", "Letreros", "Marketing", "Sitios web"],
     typeSpeed: 90,
     showCursor: false,
     loop: true
