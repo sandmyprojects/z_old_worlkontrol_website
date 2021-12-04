@@ -73,6 +73,10 @@ class Precios {
                 {
                     name: 'Estructura',
                     price: 30
+                },
+                {
+                    name: 'Instalacion',
+                    price: 70
                 }
             ],
             luminoso: [
@@ -83,6 +87,10 @@ class Precios {
                 {
                     name: '2 caras',
                     price: 180
+                },
+                {
+                    name: 'Instalacion',
+                    price: 70
                 }
             ],
             vinil: [
@@ -159,7 +167,15 @@ class Precios {
 
         precio = Number((precio).toFixed(1));
 
-        alert(`Precio aproximado: ${precio} soles`);
+        // alert(`Precio aproximado: ${precio} soles`);
+
+        Swal.fire(
+            {
+                title: 'Precio aproximado',
+                text: `S/. ${precio}`,
+                confirmButtonText: 'Cerrar'
+            }
+        )
     }
 }
 
