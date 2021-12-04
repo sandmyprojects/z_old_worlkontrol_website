@@ -29,7 +29,7 @@ title: "Contacto"
             <hr>
             <div>
                 <p>
-                    Tipo
+                    Seleccione el producto final
                 </p>
                 <div id="type">
                     <input type="radio" onclick="Precios.setType('banner')" name="type" id="banner" value="banner">
@@ -49,20 +49,22 @@ title: "Contacto"
             <div class="grid:2 gap">
                 <div>
                     <label class="label">Alto</label>
-                    <input type="number" class="input is-text" id="alto" step="0.01" required>
+                    <input placeholder="Medida en centimetros" type="number" class="input is-text" id="alto" step="0.01" required>
                 </div>
                 <div>
                     <label class="label">Ancho</label>
-                    <input type="number" class="input is-text" id='ancho' step="0.01" required>
+                    <input placeholder="Medida en centimetros" type="number" class="input is-text" id='ancho' step="0.01" required>
                 </div>
             </div>
             <hr>
             <div class="field" id="especificaciones"></div>
             <div class="field mg-top:lg">
-                <button class="button is-bg">
+                <button class="button is-secondary">
+                    <i data-icon='request_quote'></i>
                     Calcular precio
                 </button>
                 <button onclick="consultar('banner')" class="button is-primary">
+                    <i class="fab fa-whatsapp"></i>
                     Cotizar
                 </button>
             </div>
