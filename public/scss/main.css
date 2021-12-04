@@ -1565,6 +1565,37 @@ img {
   cursor: pointer;
 }
 
+.toTop {
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.toTop.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .footer {
   margin-top: 2rem;
   padding-bottom: 2rem;

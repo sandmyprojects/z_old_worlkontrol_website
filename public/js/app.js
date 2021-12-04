@@ -35,20 +35,29 @@ previewImage = (id) => {
     document.getElementById(`image${id}`).click();
 }
 
+const toTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 ScrollReveal().reveal('.reveal', { delay: 500 });
 
 if (window.innerWidth > 768) {
     window.onscroll = (e) => {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             document.getElementById("navbar").style.backgroundColor = '#18904A';
+
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                document.getElementById('top').classList.add('is-active');
+            }
         } else {
             document.getElementById("navbar").style.backgroundColor = 'transparent';
+            document.getElementById('top').classList.remove('is-active');
         }
     }
 }
 
 const consultar = (name) => {
-    window.open(`https://wa.me/51946182531?text=Hola quisiera consultar sobre ${name}`, '_blank');
+    window.open(`https://wa.me/51946182531?text=Hola, quisiera consultar sobre ${name}`, '_blank');
 }
 
 class Precios {
@@ -135,7 +144,7 @@ class Precios {
             let especificacionesSplit = especificacion.value.split('::');
             especificacionesPrice += parseInt(especificacionesSplit[0]);
         }
-        
+
         if (tipo in tipos) {
             let tipoObj = tipos[tipo];
             let tipoTotalPrice = tipoObj.price + parseInt(especificacionesPrice);
@@ -144,11 +153,11 @@ class Precios {
         } else {
             precio = (parseFloat(alto) * parseFloat(ancho)) * especificacionesPrice;
         }
-        
-        precio = precio = ((20/ 100) * precio) + precio;
+
+        precio = precio = ((20 / 100) * precio) + precio;
 
         precio = Number((precio).toFixed(1));
-        
+
         alert(`Precio aproximado: ${precio} soles`);
     }
 }
