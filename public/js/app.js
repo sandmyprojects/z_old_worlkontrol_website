@@ -161,3 +161,10 @@ class Precios {
         alert(`Precio aproximado: ${precio} soles`);
     }
 }
+
+var typed = new Typed('#brand', {
+    strings: ["WORLKONTROL SYSTEM", "Diseños", "Sitios web", "Marketing"],
+    typeSpeed: 90,
+    showCursor: false,
+    loop: true
+});
