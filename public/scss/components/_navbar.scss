@@ -1,12 +1,13 @@
 $navbar-bg: $secondary-bg;
 $z-index: 99;
 $navbar-height: 80px;
+$navbar-color: #18904A; 
 
 .navbar {
     position: fixed;
     width: 100%;
     background-color: transparent;
-    // background-color: #18904A;
+    // background-color: $navbar-color;
     z-index: $z-index;
     height: 100vh;
     transition: all 0.3s;
@@ -17,7 +18,7 @@ $navbar-height: 80px;
     }
 
     @include to(md) {
-        background-color: #18904A;
+        background-color: $navbar-color;
         position: fixed;
         transform: translate(-100%, 0px);
 
@@ -59,7 +60,7 @@ $navbar-height: 80px;
     }
 
     @include to(md) {
-        background-color: #18904A;
+        background-color: $navbar-color;
         width: 100%;
         left: 0;
         top: 0;
