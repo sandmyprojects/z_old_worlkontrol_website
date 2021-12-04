@@ -1717,9 +1717,20 @@ img {
 }
 
 .box {
-  padding: 0.8rem;
+  padding: 1.2rem;
   background-color: var(--secondary-bg);
   border-radius: 0.4rem;
+}
+
+.precios-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media screen and (min-width: 48em) {
+  .precios-container {
+    padding: 2.2rem;
+  }
 }
 
 .align\:center {

@@ -11,7 +11,16 @@
 }
 
 .box {
-    padding: $padding;
+    padding: $padding-lg;
     background-color: $secondary-bg;
     border-radius: $radius-sm;
+}
+
+.precios-container {
+    @include from(md) {
+        padding: 2.2rem;
+    }
+    
+    max-width: 800px;
+    margin: auto;
 }
