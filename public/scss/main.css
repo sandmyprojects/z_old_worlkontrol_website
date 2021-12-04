@@ -1686,7 +1686,7 @@ img {
 
 @media screen and (min-width: 48em) {
   .service__info h2 {
-    letter-spacing: 1.4rem;
+    letter-spacing: 1.2rem;
   }
 }
 
@@ -1715,7 +1715,13 @@ img {
 
 .ml1 {
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 48em) {
+  .ml1 {
+    font-size: 3em;
+  }
 }
 
 .ml1 .letter {

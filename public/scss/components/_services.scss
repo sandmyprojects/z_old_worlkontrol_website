@@ -37,7 +37,7 @@
             text-transform: uppercase;
 
             @include from(md) {
-                letter-spacing: 1.4rem;
+                letter-spacing: 1.2rem;
             }
         }
 
@@ -74,7 +74,11 @@
 
 .ml1 {
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: 2em;
+
+    @include to(md) {
+        font-size: 3em;
+    }
 }
 
 .ml1 .letter {
