@@ -2,6 +2,7 @@
     &__img {
         width: 100%;
         height: 250px;
+        object-fit: cover;
         border-radius: $radius-sm;
         background-position: center;
         background-size: cover;
