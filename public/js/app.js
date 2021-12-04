@@ -163,7 +163,7 @@ class Precios {
 }
 
 var typed = new Typed('#brand', {
-    strings: ["WORLKONTROL SYSTEM", "Diseños", "Sitios web", "Marketing"],
+    strings: ["WORLKONTROL SYSTEM", "Diseños", "Marketing", "Sitios web"],
     typeSpeed: 90,
     showCursor: false,
     loop: true
