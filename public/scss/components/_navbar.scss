@@ -103,6 +103,7 @@ $navbar-height: 80px;
     &:hover {
         @include from(md) {
             background-color: #13743b;
+            color: #fff;
         }
     }
 }
