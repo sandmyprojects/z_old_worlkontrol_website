@@ -149,6 +149,6 @@ class Precios {
 
         precio = Number((precio).toFixed(1));
         
-        alert(`Precio aproximado: ${precio}`);
+        alert(`Precio aproximado: ${precio} soles`);
     }
 }
