@@ -1,7 +1,10 @@
 .banner {
     background-color: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/fondo.png);
     background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 700px;
+    background-size: cover;
     padding: 2rem 1rem;
 
     display: grid;
@@ -41,8 +44,10 @@
 
 .title-banner {
     background-color: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/fondo.png);
     background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
     padding: 4rem 1rem;
 
     @include from(md) {

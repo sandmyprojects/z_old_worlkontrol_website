@@ -144,7 +144,11 @@ class Precios {
         } else {
             precio = (parseFloat(alto) * parseFloat(ancho)) * especificacionesPrice;
         }
+        
+        precio = precio = ((20/ 100) * precio) + precio;
 
-        alert(`Precio aproximado: ${Number((precio).toFixed(1))}`);
+        precio = Number((precio).toFixed(1));
+        
+        alert(`Precio aproximado: ${precio}`);
     }
 }

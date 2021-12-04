@@ -1291,9 +1291,12 @@ img {
 
 .banner {
   background-color: #000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/banner.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/banner.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/fondo.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/fondo.png);
   background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: 700px;
+  background-size: cover;
   padding: 2rem 1rem;
   display: -ms-grid;
   display: grid;
@@ -1343,9 +1346,11 @@ img {
 
 .title-banner {
   background-color: #000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/banner.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/banner.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/fondo.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/fondo.png);
   background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
   padding: 4rem 1rem;
   text-align: center;
   text-transform: uppercase;
