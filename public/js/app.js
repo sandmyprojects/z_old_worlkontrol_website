@@ -165,7 +165,7 @@ class Precios {
 
 var typed = new Typed('#brand', {
     strings: ["Diseños", "Banners", "Letreros", "Marketing", "Sitios web"],
-    typeSpeed: 90,
-    showCursor: false,
+    typeSpeed: 95,
+    showCursor: true,
     loop: true
 });

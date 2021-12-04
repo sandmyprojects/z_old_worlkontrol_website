@@ -1,6 +1,6 @@
 .banner {
     background-color: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/fondo.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/arequipa.jpg);
     background-attachment: fixed;
     background-position-x: center;
     background-position-y: 700px;
@@ -37,7 +37,9 @@
     }
 
     p {
-        font-size: 1.5rem;
+        @include from(md) {
+            font-size: 1.5rem;
+        }
         margin: 0;
     }
 }

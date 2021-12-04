@@ -1291,8 +1291,8 @@ img {
 
 .banner {
   background-color: #000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/fondo.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/fondo.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/arequipa.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/arequipa.jpg);
   background-attachment: fixed;
   background-position-x: center;
   background-position-y: 700px;
@@ -1340,8 +1340,13 @@ img {
 }
 
 .banner p {
-  font-size: 1.5rem;
   margin: 0;
+}
+
+@media screen and (min-width: 48em) {
+  .banner p {
+    font-size: 1.5rem;
+  }
 }
 
 .title-banner {
