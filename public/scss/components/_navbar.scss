@@ -13,11 +13,11 @@ $navbar-color: #18904A;
     transition: all 0.3s;
     top: 0;
 
-    @include from(md) {
+    @include from(lg) {
         height: 80px;
     }
 
-    @include to(md) {
+    @include to(lg) {
         background-color: $navbar-color;
         position: fixed;
         transform: translate(-100%, 0px);
@@ -39,7 +39,7 @@ $navbar-color: #18904A;
         margin-left: 0.8rem;
     }
 
-    @include to(md) {
+    @include to(lg) {
         display: none;
     }
 }
@@ -50,7 +50,7 @@ $navbar-color: #18904A;
     z-index: $z-index + 20;
     height: $navbar-height;
 
-    @include from(md) {
+    @include from(lg) {
         @include center;
     }
 
@@ -59,7 +59,7 @@ $navbar-color: #18904A;
         display: inline-block;
     }
 
-    @include to(md) {
+    @include to(lg) {
         background-color: $navbar-color;
         width: 100%;
         left: 0;
@@ -74,12 +74,12 @@ $navbar-color: #18904A;
     display: flex;
     font-weight: bolder;
 
-    @include from(md) {
+    @include from(lg) {
         margin-right: 26%;
         margin-left: 26%;
     }
 
-    @include to(md) {
+    @include to(lg) {
         padding-left: 1rem;
         padding-right: 1rem;
         flex-direction: column;
@@ -94,7 +94,7 @@ $navbar-color: #18904A;
     transition: all 0.3s;
     text-align: center;
 
-    @include from(md) {
+    @include from(lg) {
         height: 100%;
         padding: 0 2rem;
         @include center-y;
@@ -102,14 +102,14 @@ $navbar-color: #18904A;
 
     &.is-active,
     &:hover {
-        @include from(md) {
+        @include from(lg) {
             background-color: #13743b;
             color: #fff;
         }
     }
 }
 
-@include to(md) {
+@include to(lg) {
     .nav-item {
         display: block;
         margin-bottom: 1rem;
@@ -126,7 +126,7 @@ $navbar-color: #18904A;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
 
-    @include from(md) {
+    @include from(lg) {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
 
@@ -136,7 +136,7 @@ $navbar-color: #18904A;
 .navbar-menu {
     display: none;
 
-    @include to(md) {
+    @include to(lg) {
         position: fixed;
         top: 12px;
         right: 15px;

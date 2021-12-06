@@ -41,7 +41,7 @@ const toTop = () => {
 
 ScrollReveal().reveal('.reveal', { delay: 500 });
 
-if (window.innerWidth > 768) {
+if (window.innerWidth > 1024) {
     window.onscroll = (e) => {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
             document.getElementById("navbar").style.backgroundColor = '#18904A';

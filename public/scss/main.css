@@ -1381,13 +1381,13 @@ img {
   top: 0;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .navbar {
     height: 80px;
   }
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
   .navbar {
     background-color: #18904A;
     position: fixed;
@@ -1412,7 +1412,7 @@ img {
   margin-left: 0.8rem;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
   .navbar-social {
     display: none;
   }
@@ -1425,7 +1425,7 @@ img {
   height: 80px;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .navbar-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1444,7 +1444,7 @@ img {
   display: inline-block;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
   .navbar-logo {
     background-color: #18904A;
     width: 100%;
@@ -1463,14 +1463,14 @@ img {
   font-weight: bolder;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .navbar-links {
     margin-right: 26%;
     margin-left: 26%;
   }
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
   .navbar-links {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1490,7 +1490,7 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .nav-item {
     height: 100%;
     padding: 0 2rem;
@@ -1503,14 +1503,14 @@ img {
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .nav-item.is-active, .nav-item:hover {
     background-color: #13743b;
     color: #fff;
   }
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
   .nav-item {
     display: block;
     margin-bottom: 1rem;
@@ -1527,7 +1527,7 @@ img {
   padding-top: 100px;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .navbar-container {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1538,7 +1538,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
   .navbar-menu {
     position: fixed;
     top: 12px;
