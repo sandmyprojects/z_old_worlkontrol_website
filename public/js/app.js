@@ -181,7 +181,7 @@ class Precios {
 
 if (document.getElementById('brand') && document.querySelector('.ml1 .letters')) {
     var typed = new Typed('#brand', {
-        strings: ["Diseños", "Banners", "Letreros", "Marketing", "Sitios web"],
+        strings: ["Publicidad", "Marketing", "Sitios web"],
         typeSpeed: 95,
         showCursor: true,
         loop: true
