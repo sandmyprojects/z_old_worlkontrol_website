@@ -90,3 +90,11 @@
   border-radius: $margin;
   background-color: transparent;
 }
+.catalogo {
+  width: 100%;
+  height: 300px;
+
+  @include from(md) {
+    height: 500px;
+  }
+}

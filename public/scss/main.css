@@ -2362,4 +2362,15 @@ i[data-icon] {
   border-radius: 0.5rem;
   background-color: transparent;
 }
+
+.catalogo {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 48em) {
+  .catalogo {
+    height: 500px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
