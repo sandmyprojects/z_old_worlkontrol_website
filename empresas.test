@@ -1,0 +1,78 @@
+---
+layout: layout.html
+title: "Worlkontrol System: Publicidad y Marketing"
+description: Worlkontrol System, expertos en publicidad y markenting
+---
+<script src="https://cdn.vaadin.com/vaadin-elements/1.1.0/webcomponentsjs/webcomponents-lite.js"></script>
+<div class="title-banner">
+    <h1>
+        Empresas
+    </h1>
+</div>
+<div class="container" style="margin-top: 1rem">
+    <input class="input" type="text" placeholder="Busca una empresa...">
+    <hr>
+    <div>
+        <span class="opacity:1">
+            4 resultados de busqueda
+        </span>
+        <div class="grid:4 gap">
+            <div>
+                <h5 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                    Nombre de la empresa
+                </h5>
+                <div>
+                    <img src="https://gestion.pe/resizer/KAgs7v_OJWEIY87ghIFM8oGuqok=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/UOT7XDVZCZGT3OX3ICGJWPFNPA.jpg" alt="Imagen destacada">
+                </div>
+                <button class="button is-primary is-outlined is-small is-fullwidth mg-top">
+                    WhatsApp <i class="fab fa-whatsapp"></i>
+                </button>
+                <span class="opacity:1" style="font-size: 0.8rem;">
+                    Cayma ≈ hace un mes
+                </span>
+            </div>
+            <div>
+                <h5 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                    Nombre de la empresa
+                </h5>
+                <div>
+                    <img src="https://gestion.pe/resizer/KAgs7v_OJWEIY87ghIFM8oGuqok=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/UOT7XDVZCZGT3OX3ICGJWPFNPA.jpg" alt="Imagen destacada">
+                </div>
+                <button class="button is-primary is-outlined is-small is-fullwidth mg-top">
+                    WhatsApp <i class="fab fa-whatsapp"></i>
+                </button>
+                <span class="opacity:1" style="font-size: 0.8rem;">
+                    Cayma ≈ hace un mes
+                </span>
+            </div>
+            <div>
+                <h5 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                    Nombre de la empresa
+                </h5>
+                <div>
+                    <img src="https://gestion.pe/resizer/KAgs7v_OJWEIY87ghIFM8oGuqok=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/UOT7XDVZCZGT3OX3ICGJWPFNPA.jpg" alt="Imagen destacada">
+                </div>
+                <button class="button is-primary is-outlined is-small is-fullwidth mg-top">
+                    WhatsApp <i class="fab fa-whatsapp"></i>
+                </button>
+                <span class="opacity:1" style="font-size: 0.8rem;">
+                    Cayma ≈ hace un mes
+                </span>
+            </div>
+            <div>
+                <h5 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                    Nombre de la empresa
+                </h5>
+                <div>
+                    <img src="https://gestion.pe/resizer/KAgs7v_OJWEIY87ghIFM8oGuqok=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/UOT7XDVZCZGT3OX3ICGJWPFNPA.jpg" alt="Imagen destacada">
+                </div>
+                <button class="button is-primary is-outlined is-small is-fullwidth mg-top">
+                    WhatsApp <i class="fab fa-whatsapp"></i>
+                </button>
+                <span class="opacity:1" style="font-size: 0.8rem;">
+                    Cayma ≈ hace un mes
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
