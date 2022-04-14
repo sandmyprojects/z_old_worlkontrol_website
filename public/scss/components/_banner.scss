@@ -5,6 +5,7 @@
     background-position-x: center;
     background-position-y: 700px;
     background-size: cover;
+    color: #fff;
     padding: 2rem 1rem;
 
     display: grid;
@@ -51,6 +52,7 @@
     background-size: cover;
     background-position: bottom;
     padding: 4rem 1rem;
+    color: #fff;
 
     @include from(md) {
         padding-top: 80px + 60px;

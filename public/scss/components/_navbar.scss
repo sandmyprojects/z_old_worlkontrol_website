@@ -1,7 +1,7 @@
 $navbar-bg: $secondary-bg;
 $z-index: 99;
 $navbar-height: 80px;
-$navbar-color: #18904A; 
+$navbar-color: #18904A;
 
 .navbar {
     position: fixed;
@@ -12,6 +12,11 @@ $navbar-color: #18904A;
     height: 100vh;
     transition: all 0.3s;
     top: 0;
+    color: #fff !important;
+
+    a {
+        color: #fff !important;
+    }
 
     @include from(lg) {
         height: 80px;
@@ -37,6 +42,7 @@ $navbar-color: #18904A;
 
     a {
         margin-left: 0.8rem;
+        color: #fff;
     }
 
     @include to(lg) {
@@ -144,4 +150,8 @@ $navbar-color: #18904A;
         font-size: 1.6rem;
         display: block;
     }
+}
+
+.t-w {
+    color: #fff;
 }

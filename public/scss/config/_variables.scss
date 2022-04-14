@@ -7,9 +7,9 @@ $var-success-color: #25a56b;
 $var-warning-color: #d89219;
 $var-danger-color: #ff0059;
 
-$var-color: #D7D8D8;
-$var-bg: #000;
-$var-secondary-bg: #0B0C0B;
+$var-color: #0B0C0B;
+$var-bg: #fff;
+$var-secondary-bg: rgb(244, 244, 244);
 $var-extra-bg: lighten($var-secondary-bg, 4.5%);
 $var-border: lighten($var-secondary-bg, 15%);
 

@@ -1,0 +1,103 @@
+---
+permalink: "productos/index.html"
+layout: layout.html
+title: "Productos - Worlkontrol System"
+description: Contacte con Worlkontrol System
+---
+<script src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>
+<script src="/js/sheet.js"></script>
+<div class="title-banner">
+    <h1>
+        Nuestros productos
+    </h1>
+</div>
+<div id="mainapp">
+    <div class="container-sm">
+        <div class="box">
+            <input type="text" v-model="searchText" class="input" placeholder="Buscar...">
+        </div>
+        <br>
+        <div class="grid:4 gap">
+            <div v-for="product in filteredProducts" class="box">
+                <div class="product-img">
+                    <img :src="product.imagenes[0]" :alt="product.nombre">
+                </div>
+                <h3 class="product-title">
+                    ${product.nombre}
+                </h3>
+                <p>
+                    ${product.descripcion}
+                </p>
+                <div>
+                    <a :href="`https://wa.me/51946182531?text=Quiero saber mas de estre producto: ${product.nombre}`"
+                        class="button is-primary is-fullwidth" style="display: block; text-align: center;">
+                        <i data-icon="whatsapp"></i>
+                        Adquirir
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const { onMounted, createApp, ref, computed } = Vue
+
+    const app = createApp({
+        setup() {
+            const products = ref([])
+            const searchText = ref('')
+
+            const getProducts = async () => {
+                const response = await getSheetData('https://docs.google.com/spreadsheets/d/e/2PACX-1vSbCjuB80rNWRD0V804kBgDBTRmWB1iRUP6949BR02ZGR2ONXH3yk-vBLvEo3rnbxCdzayPhPvMgQuR/pub?output=tsv')
+
+                products.value = response.map(product => {
+                    return {
+                        ...product,
+                        imagenes: product.imagenes.split(',').map(img => img.trim())
+                    }
+                })
+
+                console.log(products.value)
+            }
+
+            onMounted(() => {
+                getProducts()
+            })
+
+            const filteredProducts = computed(() => {
+                const search = searchText.value.toLowerCase()
+
+                return products.value.filter(product => {
+                    return product.nombre.toLowerCase().includes(search) ||
+                        product.descripcion.toLowerCase().includes(search)
+                })
+            })
+
+            return {
+                products,
+                searchText,
+                filteredProducts
+            }
+        },
+        delimiters: ['${', '}']
+    })
+
+    app.mount('#mainapp')
+</script>
+<style>
+    .container-sm {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+
+    .product-img img {
+        width: 100%;
+    }
+
+    .product-title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>

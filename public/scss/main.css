@@ -513,11 +513,11 @@ video {
   --success-color: #25a56b;
   --warning-color: #d89219;
   --danger-color: #ff0059;
-  --color: #D7D8D8;
-  --bg: #000;
-  --extra-bg: #161816;
-  --secondary-bg: #0B0C0B;
-  --border-color: #303430;
+  --color: #0B0C0B;
+  --bg: #fff;
+  --extra-bg: white;
+  --secondary-bg: #f4f4f4;
+  --border-color: white;
 }
 
 @use 'sass:math';
@@ -1297,6 +1297,7 @@ img {
   background-position-x: center;
   background-position-y: 700px;
   background-size: cover;
+  color: #fff;
   padding: 2rem 1rem;
   display: -ms-grid;
   display: grid;
@@ -1357,6 +1358,7 @@ img {
   background-size: cover;
   background-position: bottom;
   padding: 4rem 1rem;
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1379,6 +1381,11 @@ img {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   top: 0;
+  color: #fff !important;
+}
+
+.navbar a {
+  color: #fff !important;
 }
 
 @media screen and (min-width: 64em) {
@@ -1410,6 +1417,7 @@ img {
 
 .navbar-social a {
   margin-left: 0.8rem;
+  color: #fff;
 }
 
 @media screen and (max-width: 64em) {
@@ -1549,6 +1557,10 @@ img {
   }
 }
 
+.t-w {
+  color: #fff;
+}
+
 .whatsapp {
   font-size: 32px;
   width: 60px;
@@ -1619,6 +1631,10 @@ img {
   margin-right: auto;
   margin-top: 0.5rem;
   font-size: 1.4rem;
+}
+
+.toTop {
+  z-index: 9999999;
 }
 
 .works__img {
@@ -2372,5 +2388,9 @@ i[data-icon] {
   .catalogo {
     height: 500px;
   }
+}
+
+#whatsapp {
+  color: #fff !important;
 }
 /*# sourceMappingURL=main.css.map */
