@@ -52,7 +52,7 @@ description: Contacte con Worlkontrol System
             const searchText = ref('')
 
             const getProducts = async () => {
-                const response = await getSheetData('https://docs.google.com/spreadsheets/d/e/2PACX-1vSbCjuB80rNWRD0V804kBgDBTRmWB1iRUP6949BR02ZGR2ONXH3yk-vBLvEo3rnbxCdzayPhPvMgQuR/pub?output=tsv')
+                const response = await getSheetData('https://docs.google.com/spreadsheets/d/e/2PACX-1vSbCjuB80rNWRD0V804kBgDBTRmWB1iRUP6949BR02ZGR2ONXH3yk-vBLvEo3rnbxCdzayPhPvMgQuR/pub?output=tsv&version_data=' + new Date().getTime())
 
                 products.value = response.map(product => {
                     return {
