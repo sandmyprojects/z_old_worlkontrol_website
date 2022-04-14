@@ -22,6 +22,10 @@ description: Contacte con Worlkontrol System
                 <div class="product-img">
                     <img :src="product.imagenes[0]" :alt="product.nombre">
                 </div>
+                <br>
+                <span class="opacity:1">
+                    S/ ${product.precio_total}
+                </span>
                 <h3 class="product-title">
                     ${product.nombre}
                 </h3>
@@ -96,7 +100,6 @@ description: Contacte con Worlkontrol System
     }
 
     .product-title {
-        margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: bold;
     }
